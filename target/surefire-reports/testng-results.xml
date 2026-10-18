@@ -2,24 +2,32 @@
 <testng-results ignored="3" total="7" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-17T09:29:44 IST" name="regression" finished-at="2026-10-17T09:30:16 IST" duration-ms="31730">
+  <suite started-at="2026-10-18T09:21:19 IST" name="regression" finished-at="2026-10-18T09:22:25 IST" duration-ms="65445">
     <groups>
     </groups>
-    <test started-at="2026-10-17T09:29:44 IST" name="test1" finished-at="2026-10-17T09:30:16 IST" duration-ms="31730">
+    <test started-at="2026-10-18T09:21:19 IST" name="test1" finished-at="2026-10-18T09:22:25 IST" duration-ms="65445">
       <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:44 IST" name="SetupBrowser" finished-at="2026-10-17T09:29:51 IST" duration-ms="6812" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:21:19 IST" name="SetupBrowser" finished-at="2026-10-18T09:21:58 IST" duration-ms="39118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:44 IST" name="SetupBrowser" finished-at="2026-10-17T09:29:51 IST" duration-ms="6850" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:21:19 IST" name="SetupBrowser" finished-at="2026-10-18T09:21:57 IST" duration-ms="38142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:44 IST" name="SetupBrowser" finished-at="2026-10-17T09:29:51 IST" duration-ms="7101" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:21:19 IST" name="SetupBrowser" finished-at="2026-10-18T09:21:58 IST" duration-ms="39239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method signature="Loginandverify()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:51 IST" name="Loginandverify" finished-at="2026-10-17T09:29:57 IST" duration-ms="6080" status="FAIL">
+        <test-method signature="Loginpage5()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:21:57 IST" name="Loginpage5" finished-at="2026-10-18T09:22:14 IST" duration-ms="16262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginpage5 -->
+        <test-method signature="Loginpage3()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:21:58 IST" name="Loginpage3" finished-at="2026-10-18T09:22:14 IST" duration-ms="16104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginpage3 -->
+        <test-method signature="Loginandverify()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:21:58 IST" name="Loginandverify" finished-at="2026-10-18T09:22:13 IST" duration-ms="15103" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -51,35 +59,27 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginandverify -->
-        <test-method signature="Loginpage5()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:51 IST" name="Loginpage5" finished-at="2026-10-17T09:29:58 IST" duration-ms="6796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginpage5 -->
-        <test-method signature="Loginpage3()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:51 IST" name="Loginpage3" finished-at="2026-10-17T09:29:58 IST" duration-ms="6444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginpage3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:57 IST" name="tearDown" finished-at="2026-10-17T09:30:01 IST" duration-ms="3325" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:22:14 IST" name="tearDown" finished-at="2026-10-18T09:22:14 IST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:58 IST" name="tearDown" finished-at="2026-10-17T09:30:00 IST" duration-ms="1758" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:22:14 IST" name="tearDown" finished-at="2026-10-18T09:22:14 IST" duration-ms="581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:29:58 IST" name="tearDown" finished-at="2026-10-17T09:30:00 IST" duration-ms="1690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:30:00 IST" name="SetupBrowser" finished-at="2026-10-17T09:30:04 IST" duration-ms="4313" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:22:14 IST" name="SetupBrowser" finished-at="2026-10-18T09:22:20 IST" duration-ms="5914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method signature="Loginpage6()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:30:04 IST" name="Loginpage6" finished-at="2026-10-17T09:30:16 IST" duration-ms="11676" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:22:14 IST" name="tearDown" finished-at="2026-10-18T09:22:15 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Loginpage6()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:22:20 IST" name="Loginpage6" finished-at="2026-10-18T09:22:24 IST" duration-ms="4512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginpage6 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-17T09:30:16 IST" name="tearDown" finished-at="2026-10-17T09:30:16 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@399f45b1]" started-at="2026-10-18T09:22:24 IST" name="tearDown" finished-at="2026-10-18T09:22:25 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -23,6 +23,34 @@ services:
     networks:
       - selenium-grid
 
+  firefox:
+    image: selenium/node-firefox:4.48.0-20260905
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub  # Points to the Selenium Hub service by name
+      - SE_EVENT_BUS_PUBLISH_PORT=4442  # Event bus publish port
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443  # Event bus subscribe port
+      - SE_NODE_MAX_INSTANCES=5
+      - SE_NODE_MAX_SESSIONS=5
+    networks:
+      - selenium-grid
+
+  edge:
+    image: selenium/node-edge:4.48.0-20260905
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub  # Points to the Selenium Hub service by name
+      - SE_EVENT_BUS_PUBLISH_PORT=4442  # Event bus publish port
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443  # Event bus subscribe port
+      - SE_NODE_MAX_INSTANCES=5
+      - SE_NODE_MAX_SESSIONS=5
+    networks:
+      - selenium-grid
+
 networks:
   selenium-grid:
     driver: bridge  # A dedicated network for Selenium hub and nodes
