@@ -49,13 +49,19 @@
                     }
                 }
 
-                stage('Tear Down') {
-                    steps {
-                        script {
-                            // Clean up the Docker containers after tests are completed
-                            bat "docker-compose -f ${DOCKER_COMPOSE_FILE} down"
-                        }
-                    }
-                }
             }
+
+    post {
+        always {
+            echo 'Cleaning up Selenium Grid...'
+
+            bat(
+                script: "docker compose -f ${DOCKER_COMPOSE_FILE} down",
+                returnStatus: true
+            )
+
+            echo 'Cleanup attempted.'
+        }
+    }
+                
         }
