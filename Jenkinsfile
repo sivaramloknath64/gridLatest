@@ -43,7 +43,7 @@
                             // Running tests in the directory where the Git project is cloned
                             dir("${PROJECT_DIR}") {
                                 // For example, if your project is a Maven project:
-                                bat "mvn clean test -P${params.SUITE} -Dbrowser=${params.BROWSER}"
+                                bat "mvn clean test -P${params.Suite} -Dbrowser=${params.Browser}"
                             }
                         }
                     }
