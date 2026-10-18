@@ -56,7 +56,7 @@
             echo 'Cleaning up Selenium Grid...'
 
             bat(
-                script: "docker compose -f ${DOCKER_COMPOSE_FILE} down",
+                script: "docker-compose -f ${DOCKER_COMPOSE_FILE} down",
                 returnStatus: true
             )
 
