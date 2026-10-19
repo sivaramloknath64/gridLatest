@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         DOCKER_COMPOSE_FILE = 'docker-compose.yaml'
-        GRID_URL = 'http://localhost:4444/wd/hub'
+        
         PROJECT_DIR = "${env.WORKSPACE}"
     }
 
