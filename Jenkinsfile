@@ -41,12 +41,6 @@ pipeline {
 
     post {
         always {
-            publishHTML(target: [
-                reportDir: 'Reports',
-                reportFiles: 'ExtentReport.html',
-                reportName: 'Extent Report'
-            ])
-
             bat(
                 script: "docker-compose -f ${DOCKER_COMPOSE_FILE} down",
                 returnStatus: true
