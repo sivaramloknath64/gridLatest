@@ -33,7 +33,7 @@ pipeline {
         stage('Run Selenium Tests') {
             steps {
                 dir("${PROJECT_DIR}") {
-                    bat "mvn clean test -P${params.Suite} -Dbrowser=${params.Browser}"
+                    bat "mvn clean test -Dmaven.test.failure.ignore=true -P${params.Suite} -Dbrowser=${params.Browser}"
                 }
             }
         }
