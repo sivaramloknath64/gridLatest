@@ -42,7 +42,7 @@ pipeline {
     post {
         always {
             publishHTML(target: [
-                reportDir: 'ExtentReport',
+                reportDir: 'Reports',
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
             ])
