@@ -51,17 +51,14 @@
 
             }
 
-    post {
-        always {
-            echo 'Cleaning up Selenium Grid...'
+post {
+    always {
+        publishHTML(target: [
+            reportDir: 'ExtentReport',
+            reportFiles: 'ExtentReport.html',
+            reportName: 'Extent Report'
+        ])
 
-            bat(
-                script: "docker-compose -f ${DOCKER_COMPOSE_FILE} down",
-                returnStatus: true
-            )
-
-            echo 'Cleanup attempted.'
-        }
-    }
-                
+        bat 'docker compose -f docker-compose.yaml down'
+    }                
         }
